@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://jmix.io/schema/ui/window"
+        caption="msg://io.jmix.bpmui.screen.processinstance/processInstanceBrowse.caption"
+        extends="io/jmix/bpmui/screen/processinstance/process-instance-browse.xml">
+    <layout>
+        <dataGrid id="processInstancesTable"
+                  dataContainer="processInstancesDc"
+                  width="100%">
+            <actions>
+                <action id="edit" type="edit"/>
+            </actions>
+            <columns>
+                <column property="startUserId"/>
+            </columns>
+            <buttonsPanel id="buttonsPanel" alwaysVisible="true">
+                <button id="editBtn" action="processInstancesTable.edit"/>
+            </buttonsPanel>
+        </dataGrid>
+    </layout>
+</window>
